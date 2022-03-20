@@ -1,11 +1,11 @@
- /*Constructor chaining=>this process will use basically when we want
+ /*Constructor chaining=>calling constructor from another constructor with in the same class or different class.
 
-  *Constructor chaining with in the same class.We have created class anu which have 3 construtcors.lets how can
- * we call them using this keyword.
+  *If you want call a constructor with in the same class then we can use this() keyword.or
+ * if you want to call it from another class,we can use super() keyword.
  *this() should be the first line of constructor.
  *there should be the at least one constructor without this keyword.
   */
-
+//We have created class anu in which we have 3 construtcors.
  class anu{
     anu(){// default constructor 1
 
@@ -26,7 +26,7 @@
 }
  class shashi extends anu {
     shashi(){
-        super();//then from this it will go to anu default constructor.
+        super();//then from this it will go to anu default constructor. 
         System.out.println("constructor of shashi class");
     }
 
