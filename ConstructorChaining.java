@@ -27,6 +27,7 @@
  class shashi extends anu {
     shashi(){
         super();//then from this it will go to anu default constructor. 
+     //super(4);calling parameterized constructor 2.
         System.out.println("constructor of shashi class");
     }
 
