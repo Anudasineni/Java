@@ -39,7 +39,7 @@ public class ExceptionHandling {
         }
         System.out.println(num1*num2);//statement8  
         
-        /*Statement 3 will print exception message.statement4,statement7,statement8 will execute.
+        //Statement 3 will print exception message.statement4,statement7,statement8 will execute.
     }
 
 }
