@@ -13,10 +13,10 @@ public class ExceptionHandling {
            // System.out.println(n[5]=30);Warning: ArrayIndexOutOfBoundsException
             System.out.println(num1 / num2);//if there is no error in try block ,then catch block will not execute.
 
-/* note:when ever exception is found in try block,control will be passed to the catch block.So the Statements which are there
+/* note:when ever exception is found in try block,control will be passed to the catch block.So the Statements which are there in try-block
 *after the exception will not execute.example
  */
-            System.out.println(num2);//this will not execute.
+            System.out.println(num2);//this will not execute.because exception is already found at 14.
 
         }
         catch (ArithmeticException e)//this catch block will handle only if any ArithmeticException occurs in try block.
