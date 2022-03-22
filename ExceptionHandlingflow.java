@@ -28,6 +28,7 @@ public class ExceptionHandlingflow {
             System.out.println(11);//statement8(will not execute.Exception is already found).
         }
         catch (ArithmeticException e1) {
+            System.out.println(9);//this is will not execute.
             System.out.println(e1); /*this catch-block will handle only ArithmeticException.When catch-block is
         mismatched ,the program will terminate abnormally.In this case also finally block will execute.*/
     }
@@ -45,9 +46,11 @@ public class ExceptionHandlingflow {
             int n1 = 1;
             System.out.println(n1 / n);//statement 11
             System.out.println(n1);//statement12
-        } catch (Exception e) {
+        } 
+        catch (Exception e) {
             System.out.println(8 / 0);//statement13 (abnormal termination ,but before final block will execute).
-        } finally {
+        } 
+        finally {
             System.out.println("final is executed");//statement14
         }
         //only statement14 is executed
