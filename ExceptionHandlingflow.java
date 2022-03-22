@@ -39,7 +39,7 @@ public class ExceptionHandlingflow {
         /* statement7,statement9 will execute only.*/
 
 
-        // when is exception is found in catch block.
+        // when exception found in catch block.
         try {
             int n = 0;
             int n1 = 1;
