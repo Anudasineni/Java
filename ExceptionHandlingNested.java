@@ -32,6 +32,7 @@ public class ExceptionHandlingNested {
         System.out.println("outer final block");
 
     }
+//when inner catch blocks are not handling any exception.Then control will look for outer catch block.  
       try{
 
         try {
@@ -45,7 +46,7 @@ public class ExceptionHandlingNested {
             // ArrayindexBoundException only.So,the outer catch block will handle the exception.
 
         }
-        finally {
+        finally {   
             System.out.println("inner finally block");
 
         }
@@ -54,7 +55,7 @@ public class ExceptionHandlingNested {
     }
     catch(Exception e)
     {
-        System.out.println("outer catch block");//
+        System.out.println("outer catch block");//if the exception is not handled here as well then the program will terminate abruptly showing complile generated message.
 
     }
     finally
