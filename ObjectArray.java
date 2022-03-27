@@ -25,14 +25,27 @@ class Product {
         return ("Rate:"+this.rate+"Discount:"+this.discount);
     }
 }
-
+class Marks{
+    int mathsmarks;
+    String teacher;
+    public Marks(int mathsmarks,String teacher){
+        this.mathsmarks=mathsmarks;
+           this.teacher=teacher;
+           System.out.println(mathsmarks+ " "+teacher);//it prints Marks@75b84c92.To overcome this we have
+        // toString method.It returns String Representation of object.
+    }
+    public String toString(){
+        return ("marks:"+this.mathsmarks+"teacher:"+this.teacher);
+    }
+}
 public class ObjectArray {
     public static void main(String args[]){
         person obj1=new person(5,50);
         Product obj2=new Product(500,50);
         person obj3;
         obj3=new person(6,80);
-        Object[] arr={obj1,obj2,obj3};
+        Marks obj4=new Marks(13,"chandra");
+        Object[] arr={obj1,obj2,obj3,obj4};
         for (Object o: arr) {
 
             System.out.println(o);
